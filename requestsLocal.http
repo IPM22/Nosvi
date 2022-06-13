@@ -1,0 +1,25 @@
+###
+POST http://localhost:9000/api/eventos HTTP/1.1
+Content-Type: application/json
+
+{
+    "descripcion": "Servicio Dominical Domingo 5 de Junio",
+    "fecha": "2022-05-12"
+}
+
+###
+GET http://localhost:9000/api/eventos HTTP/1.1
+
+###
+GET http://localhost:9000/api/eventos/62a6ba737da2c2cd0420c6b1 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/eventos/62a6ba737da2c2cd0420c6b1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "descripcion": "Servicio Dominical Domingo 13 de Junio",
+    "fecha": "2022-05-13"
+}
+### 
+DELETE http://localhost:9000/api/eventos/62a6c0814a3142ed599b22be HTTP/1.1 HTTP/1.1
